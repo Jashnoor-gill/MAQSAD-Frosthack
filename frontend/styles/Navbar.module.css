@@ -1,0 +1,80 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 50;
+    background: transparent;
+  }
+  
+  .scrolled {
+    background: rgba(17, 24, 39, 0.6); /* bg-gray-900 bg-opacity-60 */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    color: #3b82f6; /* text-blue-400 */
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .desktopMenu {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .desktopMenu {
+      display: flex;
+      gap: 2rem;
+      font-size: 1.125rem; /* text-lg */
+    }
+  }
+  
+  .navLink {
+    color: #3b82f6; /* text-blue-400 */
+    transition: color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: white;
+  }
+  
+  .mobileMenuButton {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuIcon {
+    color: #3b82f6;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobileDropdown {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background: rgba(17, 24, 39, 0.9); /* bg-gray-900 bg-opacity-90 */
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    font-size: 1.125rem; /* text-lg */
+  }
+  

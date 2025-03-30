@@ -1,0 +1,13 @@
+{
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "tailwindCSS.experimental.classRegex": [
+      "tw`([^`]*)", 
+      "tw\\([^)]*\\)", 
+      "className=\"([^\"]*)"
+    ],
+    "css.validate": false,
+    "editor.formatOnSave": true
+  }
+  
